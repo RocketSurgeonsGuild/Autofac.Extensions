@@ -1,9 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net5.0</TargetFrameworks>
+        <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Rocket.Surgery.Conventions" />
+        <PackageReference Include="Rocket.Surgery.Hosting" />
         <ProjectReference Include="..\..\src\Conventions.Autofac\Rocket.Surgery.Conventions.Autofac.csproj" />
         <ProjectReference Include="..\..\src\Hosting.Autofac\Rocket.Surgery.Hosting.Autofac.csproj" />
         <ProjectReference Include="..\..\src\WebAssembly.Hosting.Autofac\Rocket.Surgery.WebAssembly.Hosting.Autofac.csproj" />

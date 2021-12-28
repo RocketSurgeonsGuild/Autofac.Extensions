@@ -1,13 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.1;netstandard2.0;net5.0</TargetFrameworks>
-        <PackageDescription>Provides Autofac support for a Rocket Surgery Application, converts the default service provider into an autofac based one</PackageDescription>
+        <TargetFrameworks>netstandard2.1;netstandard2.0;net5.0;net6.0</TargetFrameworks>
+        <PackageDescription
+        >Provides Autofac support for a Rocket Surgery Application, converts the default service provider into an autofac based one</PackageDescription>
         <PackageTags>$(PackageTags);autofac</PackageTags>
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="..\Conventions.Autofac\Rocket.Surgery.Conventions.Autofac.csproj" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Rocket.Surgery.Hosting" />
+        <PackageReference Include="Rocket.Surgery.Hosting.Abstractions" />
     </ItemGroup>
 </Project>

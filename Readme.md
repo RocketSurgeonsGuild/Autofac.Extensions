@@ -19,7 +19,6 @@
 | Package | NuGet |
 | ------- | ----- |
 | Rocket.Surgery.Conventions.Autofac | [![nuget-version-tfn88tvvpxea-badge]![nuget-downloads-tfn88tvvpxea-badge]][nuget-tfn88tvvpxea] |
-| Rocket.Surgery.Extensions.Autofac.Tests | [![nuget-version-6fhzndknsnsa-badge]![nuget-downloads-6fhzndknsnsa-badge]][nuget-6fhzndknsnsa] |
 | Rocket.Surgery.Hosting.Autofac | [![nuget-version-1dytjtzkv8qq-badge]![nuget-downloads-1dytjtzkv8qq-badge]][nuget-1dytjtzkv8qq] |
 | Rocket.Surgery.WebAssembly.Hosting.Autofac | [![nuget-version-8vam8n7rou/q-badge]![nuget-downloads-8vam8n7rou/q-badge]][nuget-8vam8n7rou/q] |
 <!-- nuget packages -->
@@ -41,9 +40,6 @@ TBD
 [nuget-tfn88tvvpxea]: https://www.nuget.org/packages/Rocket.Surgery.Conventions.Autofac/
 [nuget-version-tfn88tvvpxea-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Conventions.Autofac.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
 [nuget-downloads-tfn88tvvpxea-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Conventions.Autofac.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
-[nuget-6fhzndknsnsa]: https://www.nuget.org/packages/Rocket.Surgery.Extensions.Autofac.Tests/
-[nuget-version-6fhzndknsnsa-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Extensions.Autofac.Tests.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
-[nuget-downloads-6fhzndknsnsa-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Extensions.Autofac.Tests.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
 [nuget-1dytjtzkv8qq]: https://www.nuget.org/packages/Rocket.Surgery.Hosting.Autofac/
 [nuget-version-1dytjtzkv8qq-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Hosting.Autofac.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
 [nuget-downloads-1dytjtzkv8qq-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Hosting.Autofac.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
