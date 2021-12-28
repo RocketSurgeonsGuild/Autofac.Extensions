@@ -1,25 +1,23 @@
 using Autofac;
-using JetBrains.Annotations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Rocket.Surgery.Conventions.Autofac
+namespace Rocket.Surgery.Conventions.Autofac;
+
+/// <summary>
+/// IAutofacConvention
+/// Implements the <see cref="IConvention" />
+/// </summary>
+/// <seealso cref="IConvention" />
+[PublicAPI]
+public interface IAutofacConvention : IConvention
 {
     /// <summary>
-    /// IAutofacConvention
-    /// Implements the <see cref="IConvention" />
+    /// Register additional things with the container
     /// </summary>
-    /// <seealso cref="IConvention" />
-    [PublicAPI]
-    public interface IAutofacConvention : IConvention
-    {
-        /// <summary>
-        /// Register additional things with the container
-        /// </summary>
-        /// <param name="conventionContext"></param>
-        /// <param name="configuration"></param>
-        /// <param name="services"></param>
-        /// <param name="container"></param>
-        void Register(IConventionContext conventionContext, IConfiguration configuration, IServiceCollection services, ContainerBuilder container);
-    }
+    /// <param name="conventionContext"></param>
+    /// <param name="configuration"></param>
+    /// <param name="services"></param>
+    /// <param name="container"></param>
+    void Register(IConventionContext conventionContext, IConfiguration configuration, IServiceCollection services, ContainerBuilder container);
 }
