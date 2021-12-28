@@ -1,6 +1,5 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Rocket.Surgery.Conventions.Autofac;
@@ -18,24 +17,9 @@ class AutofacConventionServiceProviderFactory : IServiceProviderFactory<Containe
 
     public ContainerBuilder CreateBuilder(IServiceCollection services)
     {
-        var container = _container;
-
-        var configuration = _conventionContext.Get<IConfiguration>() ?? throw new ArgumentException("Configuration was not found in context");
-        foreach (var item in _conventionContext.Conventions.Get<IAutofacConvention, AutofacConvention>())
-        {
-            if (item is IAutofacConvention convention)
-            {
-                convention.Register(_conventionContext, configuration, services, _container);
-            }
-            else if (item is AutofacConvention @delegate)
-            {
-                @delegate(_conventionContext, configuration, services, _container);
-            }
-        }
-
-        container.Populate(services);
-
-        return container;
+        _container.ApplyConventions(_conventionContext, services);
+        _container.Populate(services);
+        return _container;
     }
 
     public IServiceProvider CreateServiceProvider(ContainerBuilder containerBuilder) => containerBuilder.Build().Resolve<IServiceProvider>();
