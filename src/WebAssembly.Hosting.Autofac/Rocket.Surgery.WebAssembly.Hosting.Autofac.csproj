@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+        <TargetFrameworks>net6.0</TargetFrameworks>
         <PackageDescription
         >Provides Autofac support for a Rocket Surgery Application, converts the default service provider into an autofac based one</PackageDescription>
         <PackageTags>$(PackageTags);autofac</PackageTags>
